@@ -29,7 +29,11 @@ npm test
 
 ## Quirks and workarounds
 
+### Linting errors in test scripts
+
 To get rid of annoying TSlint errors in test files, add `"tslint.exclude": "**/test/**/*.ts"` to your user settings in VS Code.
+
+### Port not available after application crash
 
 If application crashes and port is in use when trying to restart, run:
 
