@@ -21,7 +21,7 @@ npm install
 # Start server and watch for changes.
 gulp watch
 
-# Run test and watch for changes.
+# Run test suite.
 npm test
 ```
 
