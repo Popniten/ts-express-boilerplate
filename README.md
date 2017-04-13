@@ -12,7 +12,7 @@ Keywords: Typescript, gulp, nodejs, express, handlebars, sass, livereload, mocha
 npm install -g nodemon typescript ts-node gulp-cli
 ```
 
-Install [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) in Google Chrome for automatic browser reload.
+Install [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) in Google Chrome for automatic browser reload (and make sure it is enabled).
 
 ### Application only
 
