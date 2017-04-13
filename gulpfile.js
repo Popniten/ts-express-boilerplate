@@ -6,6 +6,7 @@ const ts = require('gulp-typescript')
 const sourcemaps = require('gulp-sourcemaps')
 const sass = require('gulp-sass')
 const nodemon = require('gulp-nodemon')
+const livereload = require('gulp-livereload')
 const runSequence = require('run-sequence')
 const source = require('vinyl-source-stream')
 const buffer = require('vinyl-buffer')
@@ -32,6 +33,7 @@ gulp.task('bundle', () => {
   .pipe(uglify()) // Uncomment = minified bundle, comment = browser debugger.
   .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest('public/js'))
+  .pipe(livereload())
 })
 
 gulp.task('copy-html', function() {
@@ -43,6 +45,7 @@ gulp.task('sass', () => {
   return gulp.src('client/sass/**/*.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(gulp.dest('./public/css'))
+  .pipe(livereload())
 })
 
 gulp.task('scripts', () => {
@@ -61,7 +64,7 @@ function watchServer() {
 
 gulp.task('watch', () => {
   watchServer()
-
+  livereload.listen()
   gulp.watch('client/src/**/*.ts', ['bundle'])
   gulp.watch('client/sass/**/*.scss', ['sass'])
   gulp.watch('server/**/*.ts', ['scripts'])

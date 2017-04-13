@@ -12,6 +12,8 @@ Keywords: Typescript, gulp, nodejs, express, sass, mocha, chai.
 npm install -g nodemon typescript ts-node gulp-cli
 ```
 
+Install [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) in Google Chrome for automatic browser reload.
+
 ### Application only
 
 ```bash
