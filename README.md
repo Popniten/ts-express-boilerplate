@@ -1,6 +1,6 @@
 # Typescript boilerplate
 
-A small boilerplate of a minimal typescript express application with automatic client and server compilation (separate), live reload and automatic testing.
+A small boilerplate of a minimal typescript express application with automatic client and server compilation (separate), live reload ~~and automatic testing~~.
 
 Keywords: Typescript, gulp, nodejs, express, handlebars, sass, livereload, mocha, chai.
 
