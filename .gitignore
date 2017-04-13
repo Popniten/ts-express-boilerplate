@@ -1,7 +1,5 @@
 public/*
 !public/.keep
-!public/js/.keep
-!public/css/.keep
 
 dist/*
 !dist/.keep
