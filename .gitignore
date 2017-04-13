@@ -1,0 +1,11 @@
+public/*
+!public/.keep
+!public/js/.keep
+!public/css/.keep
+
+dist/*
+!dist/.keep
+
+*.log
+node_modules/
+.vscode/*
