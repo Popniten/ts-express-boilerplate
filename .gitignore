@@ -7,3 +7,5 @@ dist/*
 *.log
 node_modules/
 .vscode/*
+
+.env
