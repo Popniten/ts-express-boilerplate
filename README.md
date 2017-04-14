@@ -29,6 +29,8 @@ npm test
 
 ### Using Docker
 
+Rename or copy `.env.example` to `.env`, change the environment variables to your setups preferences.
+
 ```bash
 docker-compose up
 ```
