@@ -6,17 +6,15 @@ Keywords: Typescript, gulp, nodejs, express, handlebars, sass, livereload, mocha
 
 ## Instructions
 
-Rename or copy `.env.example` to `.env`, change the environment variables to your setups preferences.
-
-### Dependencies (maybe)
-
-```bash
-npm install -g nodemon typescript ts-node gulp-cli
-```
+Rename or copy `.env.example` to `.env`, change the environment variables to your setups preferences. (Currently only used by docker, not the application.)
 
 Install [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) in Google Chrome for automatic browser reload (and make sure it is enabled).
 
 ### Without virtual environments
+
+```bash
+npm install -g nodemon typescript ts-node gulp-cli
+```
 
 ```bash
 # Install.
