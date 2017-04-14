@@ -1,5 +1,6 @@
 import * as bodyParser from 'body-parser'
 import * as express from 'express'
+import * as exphbs from 'express-handlebars'
 import * as logger from 'morgan'
 import * as path from 'path'
 
@@ -33,6 +34,17 @@ class App {
     this.express.use(logger('dev'))
     this.express.use(bodyParser.json())
     this.express.use(bodyParser.urlencoded({ extended: false }))
+    this.express.use(express.static(path.join(__dirname, 'public')))
+
+    // Handlebars
+    this.express.set('views', 'client/views')
+    this.express.engine('.hbs', exphbs({
+      defaultLayout: 'main',
+      extname: '.hbs',
+      layoutsDir: 'client/views/layouts',
+      partialsDir: 'client/views/partials'
+    }))
+    this.express.set('view engine', '.hbs')
   }
 
   /*

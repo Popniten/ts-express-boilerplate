@@ -36,9 +36,9 @@ gulp.task('bundle', () => {
   .pipe(livereload())
 })
 
-gulp.task('copy-html', function() {
-  return gulp.src('client/html/*.html')
-    .pipe(gulp.dest('public'))
+gulp.task('handlebars', function() {
+  return gulp.src('client/**/*.hbs')
+  .pipe(livereload())
 })
 
 gulp.task('sass', () => {
@@ -67,5 +67,6 @@ gulp.task('watch', () => {
   livereload.listen()
   gulp.watch('client/src/**/*.ts', ['bundle'])
   gulp.watch('client/sass/**/*.scss', ['sass'])
+  gulp.watch('client/**/*.hbs', ['handlebars'])
   gulp.watch('server/**/*.ts', ['scripts'])
 })

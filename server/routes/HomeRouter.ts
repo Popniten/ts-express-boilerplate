@@ -11,7 +11,7 @@ class HomeRouter {
   public getHome(req: Request, res: Response, next: NextFunction) {
     res
     .status(200)
-    .send({message: 'Hello World with typescript and express!'})
+    .render('home')
   }
 
   public init() {
