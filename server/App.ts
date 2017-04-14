@@ -34,7 +34,8 @@ class App {
     this.express.use(logger('dev'))
     this.express.use(bodyParser.json())
     this.express.use(bodyParser.urlencoded({ extended: false }))
-    this.express.use(express.static(path.join(__dirname, 'public')))
+    // this.express.use(express.static(path.join(__dirname, 'public')))
+    this.express.use(express.static('public'))
 
     // Handlebars
     this.express.set('views', 'client/views')
