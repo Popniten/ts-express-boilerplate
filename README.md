@@ -27,6 +27,12 @@ gulp watch
 npm test
 ```
 
+### Using Docker
+
+```bash
+docker-compose up
+```
+
 ## Quirks and workarounds
 
 ### Linting errors in test scripts
