@@ -13,7 +13,7 @@ RUN cp -a /tmp/node_modules /opt/app
 # Set working directory
 WORKDIR /opt/app
 
-RUN npm install nodemon typescript ts-node gulp-cli -g && npm install
+RUN npm install nodemon typescript ts-node gulp gulp-cli -g && npm install
 
 # Copy node application folder
 COPY . /opt/app/
