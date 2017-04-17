@@ -12,6 +12,7 @@ services:
       - ./.env
     volumes:
       - .:/opt/app
+      - /opt/app/node_modules
 
   postgres:
     image: postgres:9.6
