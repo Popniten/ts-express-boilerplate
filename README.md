@@ -59,7 +59,7 @@ To get rid of annoying TSlint errors in test files, add `"tslint.exclude": "**/t
 
 ### Port not available after application crash
 
-When a NodeJS-application crashes, it may report that the port used (EADDRINUSE) is already taken when trying to restart it. The following is a way to fix that on a linux system.
+When a NodeJS-application crashes, it may report that the port used (`EADDRINUSE`) is already taken when trying to restart it. The following is a way to fix that on a linux system.
 
 ```bash
 ps -ax | grep node
