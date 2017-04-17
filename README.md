@@ -4,6 +4,14 @@ A small boilerplate of a minimal typescript express application with automatic c
 
 Keywords: Typescript, gulp, nodejs, express, handlebars, sass, livereload, mocha, chai.
 
+## Structure
+
+The `client` directory contains all files for the client side of the application, sass and typescript/javascript files to be bundled and the handlebars templates. The bundled and compiled files will then be put into the `public` folder.
+
+The `server` directory contains all server side scripts and modules. These files will be compiled to javascript and be put into the `dist` directory.
+
+The `test` folder will contain all automated tests. These files are not compiled into javascript, but uses the typescript runtime environment `ts-node` instead, when running `npm test`.
+
 ## Instructions
 
 Rename or copy `.env.example` to `.env`, change the environment variables to your setups preferences. (Currently only used by docker, not the application.)
@@ -34,6 +42,8 @@ docker-compose up
 ```
 
 ### Using Vagrant
+
+(But really... uninstall Windows, and use Docker in linux instead.)
 
 ```bash
 vagrant up
