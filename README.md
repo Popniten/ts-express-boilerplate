@@ -66,3 +66,11 @@ Find the row with the node command to start your application and note the proces
 ```bash
 kill -9 6316
 ```
+
+### Cleaning up containers and images
+
+**WARNING!! THIS WILL REMOVE ALL CONTAINERS AND VOLUMES!**
+
+```bash
+docker rm $(docker ps -a -q) && docker rmi tsexpressboilerplate_web && docker volume rm `docker volume ls -q -f dangling=true`
+```
