@@ -43,7 +43,7 @@ docker-compose up
 
 ### Using Vagrant
 
-(But really... uninstall Windows, and use Docker instead.)
+(But really... uninstall Windows, and use Docker with a linux distro instead.)
 
 ```bash
 vagrant up
