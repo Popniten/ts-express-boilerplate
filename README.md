@@ -93,7 +93,7 @@ kill -9 6316
 docker rm $(docker ps -a -q) && docker rmi tsexpressboilerplate_web && docker volume rm `docker volume ls -q -f dangling=true`
 ```
 
-Removing dangling (`<none`) images:
+Removing dangling (`<none>`) images:
 
 ```bash
 docker rmi $(docker images -f dangling=true -q)
