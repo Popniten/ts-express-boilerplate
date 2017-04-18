@@ -37,9 +37,17 @@ npm test
 
 ### Using Docker
 
+#### Option 1
+
+Run `npm install` on your host machine before launching the docker environment. This will enable running the tests on the host machine, and the linter will find the node modules.
+
 ```bash
 docker-compose up
 ```
+
+#### Option 2
+
+If you don't have node and npm installed on your host machine, uncomment line 15 in `docker-compose.yml`, and the application will work anyway. But this will make the `node_modules` folder empty on your host, which will make the linter warn about not finding the module imported in your code.
 
 ### Using Vagrant
 
